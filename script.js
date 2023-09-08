@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         const data = {
             to: "alan-braulio@hotmail.com",
-            from: "albtech24@gmailcom",
+            from: "albtech24@gmail.com",
             subject: "Contato do site",
             text: "Contato do site",
             html: `<p>Nome: ${nome}</p><br/><p>Email: ${email}</p><br/><p>Assunto: ${assunto}</p><br/><p>Mensagem: ${mensagem}</p>`
