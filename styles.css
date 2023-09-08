@@ -1,13 +1,10 @@
 /* Estilo gerais */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #191919;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos gerais de seção */
@@ -290,6 +287,7 @@ body {
     border: 1px solid #F10677;
     padding: 25px 28px;
     border-radius: 16px;
+    height: 370px;
 }
 .outline-card-testimonial > p {
     color: #ffffff50;
@@ -331,6 +329,7 @@ body {
     background-color:  #F10677;
     padding: 25px 28px;
     border-radius: 16px;
+    height: 370px;
 }
 
 .fill-in-card-testimonial > p {
@@ -494,22 +493,8 @@ footer {
   .mobile-menu-open a {
     color: #fff;
   }
+/* Seção de apresentação */
 
-  .info-projects {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-
-  .card-project {
-    max-width: 300px;
-  }
-}
-
-/* Estilos para telas pequenas */
-
-@media screen and (max-width: 767px) {
   #apresentation {
     margin: 20px 0;
   }
@@ -526,5 +511,42 @@ footer {
   .container-icons {
     flex-direction: column;
     gap: 15px;
+  }
+
+  /* Seção de projetos */
+
+  .info-projects {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .card-project {
+    max-width: 300px;
+  }
+
+  .footer-project{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Depoimentos */
+
+  .outline-card-testimonial, .fill-in-card-testimonial {
+    height: 280px;
+  }
+
+  /* Footer */
+
+  .first-infos-footer{
+    flex-direction: column;
+  }
+
+  .second-infos-footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }
