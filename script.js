@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function(){
         loading.style.display = "block";
 
         const data = {
-            to: "email@email.com",
-            from: "email2@email.com",
+            to: "alan-braulio@hotmail.com",
+            from: "albtech24@gmailcom",
             subject: "Contato do site",
             text: "Contato do site",
             html: `<p>Nome: ${nome}</p><br/><p>Email: ${email}</p><br/><p>Assunto: ${assunto}</p><br/><p>Mensagem: ${mensagem}</p>`
@@ -100,8 +100,14 @@ document.addEventListener("DOMContentLoaded", function(){
             },
             body: JSON.stringify(data)
         }).then(res => {
-            loading.style.display = "none";
-            successMessage.style.display = "block"
+            if (res.ok) {
+                loading.style.display = "none";
+                successMessage.style.display = "block";
+            } else {
+                loading.style.display = "none";
+                errorMessage.style.display = "block";
+                console.error(`Erro na resposta da API: ${res.status} - ${res.statusText}`);
+            }
         }).catch((error) => {
             console.error(error);
             loading.style.display = "none";
