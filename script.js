@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(){
             html: `<p>Nome: ${nome}</p><br/><p>Email: ${email}</p><br/><p>Assunto: ${assunto}</p><br/><p>Mensagem: ${mensagem}</p>`
         }
 
-        fetch("https://aula-send-grid-node.onrender.com", {
+        fetch("https://aula-send-grid-node.onrender.com/send-email", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
