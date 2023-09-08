@@ -7,6 +7,15 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
 /* Estilos gerais de seção */
 
 .container {
@@ -448,15 +457,24 @@ footer {
   margin-top: 30px;
 }
 
-.second-infos-footer ul{
+.menu-footer ul{
   display: flex;
 }
 
-.second-infos-footer ul li {
+.menu-footer ul li {
   list-style: none;
   margin-right: 20px;
-  color: #a7a7a7;
+}
+
+.menu-footer ul li a{
   font-size: 16px;
+  color: #a7a7a7;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.menu-footer ul li a:hover {
+  color: #e500ce;
 }
 
 /* Estilos para telas medias */
@@ -534,7 +552,7 @@ footer {
   /* Depoimentos */
 
   .outline-card-testimonial, .fill-in-card-testimonial {
-    height: 280px;
+    height: 200px;
   }
 
   /* Footer */
@@ -548,5 +566,11 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+
+  /* Contato */
+
+  .info-contact{
+    padding: 0 40px;
   }
 }
