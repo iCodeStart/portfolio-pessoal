@@ -555,6 +555,12 @@ footer {
     height: 200px;
   }
 
+  /* Contato */
+
+  .info-contact{
+    padding: 0 40px;
+  }
+
   /* Footer */
 
   .first-infos-footer{
@@ -568,9 +574,4 @@ footer {
     gap: 20px;
   }
 
-  /* Contato */
-
-  .info-contact{
-    padding: 0 40px;
-  }
 }
